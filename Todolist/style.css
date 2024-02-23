@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    width: 50%;
+    background: white;
+    display: flex; 
+    flex-direction: column;
+}
+.header{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 1rem;
+  
+}
+.list img{
+width: 50px;
+margin-left: 12px;
+}
+.search{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background: #edeef0;
+    border-radius: 24px;
+    padding-left: 1rem;
+    margin: 1rem;
+    
+
+}
+#inputbox{
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+.addbutton{
+    padding: .8rem 3rem;
+    border: none;
+    outline: none;
+    background: rgb(77, 77, 240);
+    border-radius: 24px;
+    color: white;
+    font-size: 1rem;
+    
+}
+@media (max-width: 1200px) {
+    .addbutton{
+        padding: 0.8rem 1rem;
+    }
+}
+.addbutton:hover{
+    cursor: pointer;
+}
+
+.task ul li{
+text-decoration: none;
+list-style: none;
+font-size: 1.8rem;
+padding: 1rem 4rem ;
+cursor: pointer;
+position: relative;
+
+}
+
+
+
+
+ul li::before{
+content: " ";
+position: absolute;
+top: 6px;
+left: 8px;
+width: 28px;
+height: 28px;
+background-image: url(unchecked.png);
+background-size: cover;
+background-position: center;
+margin-top: 1rem;
+
+}
+
+ ul li.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+    
+ ul li.checked::before{
+    content: "";
+    background-image: url(checked.png);
+}
+
+ul li span{
+    position: absolute;
+    top: 22px;
+    right: 37px;
+    width: 30px;
+    height: 30px;
+    border-radius: 24px;
+    text-align: center;
+
+}
+ul li span:hover{
+    background-color: grey;
+    cursor: pointer;
+    color: whitesmoke;
+}
