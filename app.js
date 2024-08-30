@@ -24,6 +24,11 @@ btn.addEventListener("click" ,() =>{
     addtext()
 });
 
+input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        addtext();
+    }
+});
   
 
 

@@ -118,3 +118,13 @@ ul li span:hover{
     cursor: pointer;
     color: whitesmoke;
 }
+@media (max-width:900px) {
+    .list{
+        width: 70%;
+    }
+}
+@media (max-width:560px) {
+    .list{
+        width: 90%;
+    }
+}
